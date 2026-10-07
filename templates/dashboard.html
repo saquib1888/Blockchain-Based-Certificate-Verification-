@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>College Admin Dashboard</h1>
+    <h3>Upload Student Certificate</h3>
+
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+
+        <label>Student Name</label><br>
+        <input type="text" name="student_name" required><br>
+
+        <label>Roll Number</label><br>
+        <input type="text" name="roll_no" required><br>
+
+        <label>Select Certificate File</label><br>
+        <input type="file" name="certificate" required><br>
+
+        <button type="submit">Upload Certificate</button>
+    </form>
+
+    <br>
+    <a href="/"><button>Back Home</button></a>
+</div>
+
+</body>
+</html>

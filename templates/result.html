@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    {% if valid %}
+        <h1 style="color:green;">✔ Valid Certificate</h1>
+        <p>This certificate exists in the blockchain record and is authentic.</p>
+    {% else %}
+        <h1 style="color:red;">❌ Fake Certificate</h1>
+        <p>This certificate does NOT match any stored record.</p>
+    {% endif %}
+
+    <br>
+    <a href="/verify"><button>Verify Another</button></a>
+    <br><br>
+    <a href="/"><button>Back Home</button></a>
+
+</div>
+
+</body>
+</html>

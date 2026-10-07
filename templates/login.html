@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <div class="login-left">
+        <div>
+            <h1>🎓 Certificate Verification System</h1>
+            <p>
+                Blockchain Based Authentication<br>
+                Secure Academic Records<br>
+                Instant Employer Verification
+            </p>
+        </div>
+    </div>
+
+    <div class="login-right">
+        <div class="login-box">
+            <h2>Admin Login</h2>
+
+            <form method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
